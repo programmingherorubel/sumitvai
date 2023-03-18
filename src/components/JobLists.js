@@ -22,7 +22,7 @@ const JobLists = () => {
     if(isLoading) jobContent = <Loading />
     if(!isLoading && isError) jobContent = <p>Error..</p>
     if(!isLoading && !isError && jobs.length > 0){
-        console.log(jobs)
+        // console.log(jobs)
         jobContent = jobs
         .filter(job => {
             if(search){
